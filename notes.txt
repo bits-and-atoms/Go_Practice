@@ -1,0 +1,24 @@
+go run filename , this will compile and execute the file in one step
+
+go build filename this command will compile and generate executable of the project
+
+go fmt , formats all files inside the current directory
+
+go install package/path , this command will compile and install the package
+
+go get package/path , this command will download and install the package along with its dependencies
+
+go test , this command will run all the test files in the current directory
+
+go mod init module/name , this command initializes a new module and creates a go.mod file
+go mod tidy , this command cleans up the go.mod file by removing unused dependencies and adding any missing ones
+go get , this command is used to download and install packages and their dependencies
+
+package main, this make sure that current code comes under main package, and if file has this as starting then they
+need to have main function as entry point and when i do go build i will get an executable file
+
+package anyothername , this means that the current file is part of a package named anyothername and it cannot have main function as entry point
+and it dont generate executable file when i do go build
+
+import "fmt" , this imports the fmt package which contains functions for formatted I/O operations
+
