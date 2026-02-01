@@ -22,3 +22,8 @@ and it dont generate executable file when i do go build
 
 import "fmt" , this imports the fmt package which contains functions for formatted I/O operations
 
+packages and modules
+to make your own package create a folder with package name and inside that create go files with package name same as folder name
+then you can import that package in other files using import "package/name"
+also names of functions and variables that start with uppercase letter are exported and can be accessed from other packages
+while names that start with lowercase letter are unexported and can only be accessed within the same package
