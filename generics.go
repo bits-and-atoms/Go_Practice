@@ -5,6 +5,8 @@ import "fmt"
 func add[T int | float64 | string](a, b T) T {
 	return a + b
 }
+
+// generics are beautiful way of using interface{}
 func main() {
 	rel1 := add("hello, ", "world!")
 	fmt.Println(rel1)
