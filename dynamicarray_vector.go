@@ -26,4 +26,14 @@ func main() {
 	temp[2] = 555
 	fmt.Println(pt)
 	fmt.Println(temp)
+
+	//appending multiple value
+	temp = append(temp, 111, 222, 333)
+	fmt.Println(temp)
+
+	//apending another slice
+	another := []int{700, 800, 900}
+	temp = append(temp, another...)
+	//... is used to unpack the slice
+	fmt.Println(temp)
 }
